@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="homePage  " id="homePage">
+   
+      <h1>Welcome to the Quiz!</h1>
+    
+      <form action="">
+          
+           <select id="category" name="category" class="form-control " required>
+            <option disabled selected value="">Select Category</option>
+            <option value="9">General Knowledge</option>
+            <option value="10">Entertainment: Books</option>
+            <option value="11">Entertainment: Film</option>
+            <option value="12">Entertainment: Music</option>
+            <option value="13">Entertainment: Musicals &amp; Theatres</option>
+            <option value="14">Entertainment: Television</option>
+            <option value="15">Entertainment: Video Games</option>
+            <option value="16">Entertainment: Board Games</option>
+            <option value="17">Science &amp; Nature</option>
+            <option value="18">Science: Computers</option>
+            <option value="19">Science: Mathematics</option>
+            <option value="20">Mythology</option>
+            <option value="21">Sports</option>
+            <option value="22">Geography</option>
+            <option value="23">History</option>
+            <option value="24">Politics</option>
+            <option value="25">Art</option>
+            <option value="26">Celebrities</option>
+            <option value="27">Animals</option>
+            <option value="28">Vehicles</option>
+            <option value="29">Entertainment: Comics</option>
+            <option value="30">Science: Gadgets</option>
+            <option value="31">Entertainment: Japanese Anime &amp; Manga</option>
+            <option value="32">Entertainment: Cartoon &amp; Animations</option>
+
+               </select>
+             
+       
+       
+         <select id="level" name="level" class="form-control " required>
+           <option value="" selected disabled>  Select Difficulty</option>
+           <option value="Easy">Easy</option>
+           <option value="Medium">Medium</option>
+           <option value="Hard">Hard</option>
+           
+          </select>
+           <input type="submit" id="submit">
+     </form>
+     
+    
+
+  </div>
+  <div class="quiz hideMe">
+    <h2>Question No. <span id="qNo"></span></h2>
+    <p id="questionState">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates expedita distinctio quod fuga, repellendus, at totam quos explicabo exercitationem recusandae tenetur. Quo quasi tempora, error et fuga nihil quae corporis?</p>
+    <form action="">
+      <div class="optionCon">
+        <input type="radio" name="answer" id="radioA" checked="checked ">
+      <label for="radioA" id="option1">option 1</label>
+      </div>
+      <div class="optionCon">
+        <input type="radio" id="radioB" name="answer">
+      <label for="radioB" id="option2">option 2</label>
+      </div>
+      <div class="optionCon">
+        <input type="radio" id="radioC" name="answer">
+      <label for="radioC" id="option3">option 3</label>
+      </div>
+      <div class="optionCon">
+        <input type="radio" id="radioD" name="answer">
+      <label for="radioD" id="option4">option 4</label>
+      </div>
+    </form>
+    <div id="btnContainer">
+      <button id="nextBtn">Next</button>
+    </div>
+
+       
+  </div>
+  <div class="score hideMe">
+    <h1>Thank you for taking the quiz!</h1>
+     <h3>answered correctly:<span></span></h3>
+     <h3>answered incorrectly:<span></span></h3>
+     <h2>final score:<span></span></h2>
+     <button id="Retake">Go to home page</button>
+
+  </div>
+  
+</body>
+<script src="app.js"></script>
+</html>
